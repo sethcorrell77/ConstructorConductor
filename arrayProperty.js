@@ -3,3 +3,6 @@
 //Add a reverse method to the String 'class' so that every instance of String can call reverse and reverse itself.
   
   //code here
+var str = 'class';
+
+str.split("").reverse().join("");

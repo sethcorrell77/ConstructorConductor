@@ -7,26 +7,40 @@
 
   //code here
 
+function User(name, email, password, totalScore) {
+	this.name = name;
+	this.email = email;
+	this.password = password;
+	this.totalScore = totalScore;
+} 
+
 
 //Create a Question constructor that accepts title, answersArray, rightAnswer, and difficulty parameters
 
   //code here
-
+function Question(title, answersArray, rightAnswer, difficulty) {
+	this.title = title;
+	this.answersArray = answersArray;
+	this.rightAnswer = rightAnswer;
+	this.difficulty = difficulty;
+}
 
 //Create a users Array which is going to hold all of our users.
 
   //code here
-
+var users = [];
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
   //code here
-
+var user1 = new Users("Seth", "sethcorrell77@gmail.com", "alkdjf", 9);
+var user2 = new Users("Howard", "howie@jnode4.com", adldjkdk, 15);
+var user3 = new Users("Marty", "martin@schoolodev.com", jfjkdf, 22);
 
 //Create a questions Array which is going to hold all of our questions
 
   //code here
-
+var Questions = [];
 
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
 //title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?'
@@ -35,6 +49,9 @@
 //Fill in the rest of the required data as you see appropriate.
 
   //code here
+var Inheritance = new Questions('T/F: Inheritance is achieved in JavaScript through Prototypes?');
+var Javascript = new Questions('T/F: Inheritance is achieved in JavaScript through Prototypes?');
+var inJavaScript = new Questions("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value");
 
 
 //Now push all of your instances of Question into the questions Array
